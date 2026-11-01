@@ -1,0 +1,27 @@
+# ZUXFree ROM - KEEP guard. These paths are ALWAYS preserved and are subtracted
+# from the final removal set last, so a KEEP always beats a remove. Deleting any
+# of these risks a bootloop (same failure class as editing framework.jar).
+# Format: partition:/path
+
+## -- installer/UDS integration (rev11 explicitly restores these) --
+system:/system/priv-app/TabletUE/
+system:/system/priv-app/UDSEngine/
+
+## -- core ZUI services (NEVER remove) --
+system:/system/priv-app/ZuiCoreService/
+system:/system/priv-app/ZuiServiceEngine/
+system:/system/priv-app/ZuiSecurity/
+system:/system/app/ZuiFileManager/
+
+## -- functional / global features kept in vanilla --
+system:/system/preinstall/HyperEngine/
+system:/system/preinstall/MotoReadyFor/
+system:/system/preinstall/Touchnotes_HD/
+system:/system/preinstall/XuiCalculator/
+system:/system/preinstall/ZuiGallery/
+system:/system/preinstall/ZuiNotes/
+system:/system/preinstall/XuiRecorder/
+system:/system/preinstall/ZuiWeather/
+system:/system/preinstall/ZuiAlarm/
+system:/system/preinstall/ZuiClone/
+system:/system/preinstall/XuiCalendar/

@@ -1,0 +1,13 @@
+# Build artifacts / firmware images are produced locally from your own stock
+# firmware and are never committed. Only manifests, scripts and docs are versioned.
+dist/
+*.img
+*.elf
+*.bin
+*.mbn
+*.melf
+*.fv
+*.zip
+*.7z
+# keep vendored tools even though some share extensions above
+!tools/avbtool.py

@@ -1,0 +1,52 @@
+# ZUXFree ROM - vanilla debloat manifest (CN bloatware removal)
+# Format: partition:/path  (consumed by `dynobox ... --resign --debloat <this file>`)
+# Base: TB322FC ZUXOS 1.5.10.259 (A16). Every line is validated present in
+#       build/inv/blobs.txt by tools/validate_manifest.py before any build.
+# RULE: remove only genuinely-removable CN bloat. NEVER core services (see keep.txt).
+#       Re-validate after re-basing to A17 (paths may shift).
+
+## -- CN system services (priv-app) --
+system:/system/priv-app/BaiduNetworkLocation/
+system:/system/priv-app/XuiEasySync/
+system:/system/priv-app/LenovoWhatsNew/
+system:/system/priv-app/TabletPushOut/
+system:/system/priv-app/LeVoiceAgent/
+system:/system/priv-app/XiaotianTrigger/
+product:/priv-app/LenovoXiaoTian/
+system:/system/priv-app/LFHTianjiaoTablet/
+system:/system/priv-app/ZuiNewBrowser/
+system:/system/priv-app/LenovoStore/
+system:/system/priv-app/DataMonitor/
+system:/system/priv-app/ZuiXlog/
+product:/app/xiangbb/
+
+## -- CN preinstalled apps (/system/preinstall) --
+system:/system/preinstall/SogouInput/
+system:/system/preinstall/BaiduNetdisk/
+system:/system/preinstall/DouYin/
+system:/system/preinstall/iqiyi/
+system:/system/preinstall/Youku/
+system:/system/preinstall/Weibo_HDwm/
+system:/system/preinstall/kwai_HD/
+system:/system/preinstall/Wangyiyun/
+system:/system/preinstall/Bilicomic/
+system:/system/preinstall/Canva/
+system:/system/preinstall/Capcut_prc/
+system:/system/preinstall/aiwork_360/
+system:/system/preinstall/MiguPlay/
+system:/system/preinstall/Moffice_196/
+system:/system/preinstall/LFHEducenterHD/
+system:/system/preinstall/minigameLauncher_release/
+system:/system/preinstall/LenovoSmartBuy_lenovopad/
+system:/system/preinstall/AiFlashPoint/
+system:/system/preinstall/HSJPRO/
+system:/system/preinstall/TabletVantage/
+system:/system/preinstall/LegionZone/
+
+## -- CN preinstall trigger configs (stop first-boot installs) --
+system:/system/etc/lenovo_aweme_183_pre_install.config
+system:/system/etc/qiyioemkey.ini
+system:/system/etc/Youku/
+system:/system/etc/weibo_channel.txt
+system:/system/etc/lenovo_bili_comic_channel.txt
+system:/system/etc/AI/service_config/baidu_config.txt

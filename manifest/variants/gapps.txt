@@ -1,0 +1,8 @@
+# ZUXFree ROM - GApps variant extra removals. Applied ON TOP of debloat.txt when
+# the Google apps are shipped (the zuxfree-addon module provides the Google-signed
+# replacements). Android allows only ONE system package installer / documents
+# provider, so the ZUI/AOSP ones must go when the Google ones are added.
+# See zuxfree-addon/addon/hide.txt. Format: partition:/path
+
+system:/system/priv-app/ZuiPackageInstaller/
+system:/system/priv-app/DocumentsUI/

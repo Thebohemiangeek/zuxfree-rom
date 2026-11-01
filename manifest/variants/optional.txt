@@ -1,0 +1,30 @@
+# ZUXFree ROM - OPTIONAL aggressive strip (applied ON TOP of debloat.txt when the
+# user wants ZUI stock utilities gone in favour of Google/Fossify alternatives,
+# e.g. Google Photos, Fossify Clock). NOT in the default vanilla build.
+# These override keep.txt ONLY when this variant is explicitly selected.
+# Format: partition:/path
+
+## -- ZUI stock utility apps (replace with Play/F-Droid equivalents) --
+system:/system/preinstall/ZuiGallery/
+system:/system/preinstall/ZuiNotes/
+system:/system/preinstall/XuiRecorder/
+system:/system/preinstall/ZuiWeather/
+system:/system/preinstall/ZuiAlarm/
+system:/system/preinstall/ZuiClone/
+system:/system/preinstall/XuiCalendar/
+system:/system/preinstall/XuiCalendarOverlayblue/
+system:/system/preinstall/XuiCalendarOverlaygolden/
+system:/system/preinstall/XuiCalendarOverlaygrace/
+system:/system/preinstall/XuiCalendarOverlaylime/
+system:/system/preinstall/XuiCalendarOverlaymostbeautiful/
+system:/system/preinstall/XuiCalendarOverlaypandaer/
+system:/system/preinstall/XuiCalendarOverlaypink/
+system:/system/preinstall/XuiCalendarOverlaythin/
+
+## -- extra CN-service system apps (from zuxfree hide-optional) --
+system:/system/priv-app/LeVoiceCaptionApp/
+system:/system/priv-app/ZuiAILens/
+system:/system/priv-app/ZuiDeviceidService/
+
+## -- Lenovo OTA updater (block to prevent an OTA breaking the modified build) --
+system:/system/priv-app/LenovoOTA/
